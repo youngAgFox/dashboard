@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="dashboard">
+        <div style="display: flex; margin: 0.5rem; align-items: center; gap: 10px;">
+            <img src="./res/icons/Favorites/view-dashboard.svg" alt="Dashboard icon" height="48"
+                style="filter: invert();">
+            <h1 style="font-size: 20px;">Dashboard</h1>
+        </div>
+        <ul>
+            <li><img src="./res/icons/Favorites/icons8-home-50.svg" alt="House icon"> Home</li>
+            <li><img src="./res/icons/Favorites/card-account-details.png" alt="Bookmark icon"> Profile</li>
+            <li><img src="./res/icons/Favorites/forum.png" alt="Person on card icon"> Messages</li>
+            <li><img src="./res/icons/Favorites/icons8-clock-50.svg" alt="Clock icon"> History</li>
+            <li><img src="./res/icons/Favorites/icons8-check-all-50.svg" alt="Checkmarks icon"> Tasks</li>
+            <li><img src="./res/icons/Favorites/account-group.png" alt="Picture icon"> Communities</li>
+        </ul>
+        <ul>
+            <li><img src="./res/icons/Favorites/icons8-settings-50.svg" alt="Cog icon"> Settings</li>
+            <li><img src="./res/icons/Favorites/icons8-support-50.svg" alt="Wrench icon"> Support</li>
+            <li><img src="./res/icons/Favorites/icons8-briefcase-50.svg" alt="Briefcase icon"> Privacy</li>
+        </ul>
+    </nav>
+    <div class="search">
+        <div>
+            <img src="./res/icons/Favorites/magnify.png" alt="Magnifying glass icon">
+            <input type="search" name="project-search" id="project-search-bar" style="flex: 1;">
+            <img src="./res/icons/Favorites/bell-ring.png" alt="Ringing bell icon">
+            <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon">
+            <span>Cameron Ray</span>
+        </div>
+        <div>
+            <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon" style="height: 50px;">
+            <div style="display: flex; flex-direction: column; flex: 1;">
+                <div style="font-size: 0.8em;">Hi there,</div>
+                <div>Cameron Ray (@cutie)</div>
+            </div>
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
+    </div>
+    <div class="workspace">
+        <h1>Your Projects</h1>
+        <h1>Announcements</h1>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <article>
+                <h1>Impossi App</h1>
+                How <em>you</em> doin'?
+            </article>
+            <article>
+                <h1>Screen Doggo</h1>
+                Bork bork.
+            </article>
+            <article>
+                <h1>Gastby on Crack</h1>
+                \^o.o^/
+            </article>
+            <article>
+                <h1>Elephants of Fortune</h1>
+                Lucky.
+            </article>
+            <article>
+                <h1>Villager News?</h1>
+                He wants his wood back.
+            </article>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div id="announcements" class="side-card">
+                <div>
+                    <h1>Site Maintenance</h1>
+                    <p>Lorem Ipsum.</p>
+                </div>
+                <div>
+                    <h1>Community Share Day</h1>
+                    <p>It's today, and its our favorite day!</p>
+                </div>
+            </div>
+            <h1>Trending</h1>
+            <div id="trending" class="side-card">
+                <div>
+                    <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon" style="height: 50px;">
+                    <div class="name-tag">
+                        <span>@Gastby</span>
+                        <span>Menance</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon" style="height: 50px;">
+                    <div class="name-tag">
+                        <span>@Ghastby</span>
+                        <span>Flying Menance</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon" style="height: 50px;">
+                    <div class="name-tag">
+                        <span>@Gastby2</span>
+                        <span>Menance</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="./res/icons/Favorites/icons8-picture-50.svg" alt="Picture icon" style="height: 50px;">
+                    <div class="name-tag">
+                        <span>@Gasttby2</span>
+                        <span>Menance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

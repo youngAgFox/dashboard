@@ -1,0 +1,179 @@
+:root {
+    --clr-1: #ecfdf5;
+    --clr-2: #d1fae5;
+    --clr-3: #a7f3d0;
+    --clr-4: #6ee7b7;
+    --clr-5: #34d399;
+    --clr-6: #10b981;
+    --clr-7: #059669;
+    --clr-8: #047857;
+    --clr-9: #065f46;
+    --clr-10: #064e3b;
+}
+
+body, html, ul, h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: var(--clr-1);
+}
+
+.search > div {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    margin: 1rem 2rem;
+    font-weight: bold;
+}
+
+.search div img {
+    height: 24px;
+}
+
+.search button {
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: var(--clr-8);
+}
+
+.search button:hover {
+    background-color: var(--clr-6);
+}
+
+input[type=search] {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--clr-5);
+    padding: 0.4rem 1rem;
+}
+
+input[type=search]:focus {
+    background-color: var(--clr-3);
+}
+
+.dashboard {
+    color: var(--clr-1);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    grid-row: span 2;
+    background-color: var(--clr-8);
+}
+
+.dashboard ul {
+    margin: 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.dashboard ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.dashboard ul li img {
+    filter: invert();
+    display: inline-block;
+    height: 16px;
+}
+
+.workspace {
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: var(--clr-5);
+    display: grid;
+    grid-template-columns: 5fr minmax(200px, 1fr);
+    grid-template-rows: 1rem 1fr;
+    gap: 15px;
+}
+
+.workspace::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(var(--clr-7), 75%, var(--clr-4));
+}
+
+.workspace h1 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.workspace article {
+    background-color: var(--clr-1);
+    border-left: 8px solid var(--clr-10);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 12px;
+    box-shadow: 0 3px #04785749;
+}
+
+.workspace article h1 {
+    font-size: 16px;
+}
+
+.announcements h1, .announcements p {
+    margin: 0;
+}
+
+.announcements p {
+    margin-bottom: 1rem;
+}
+
+.side-card {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: var(--clr-1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#announcements div:not(:last-child) {
+    border-bottom: 4px solid var(--clr-2);
+}
+
+#trending > div {
+    display: flex;
+    align-items: center;
+}
+
+.name-tag {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.name-tag:first-child {
+    font-weight: bold;
+}
